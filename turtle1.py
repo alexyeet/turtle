@@ -25,14 +25,12 @@ chase.left(90)
 
 while True:
     #color((randint(0,255)),(randint(0,255)),(randint(0,255)))
-    #jaden.stamp()
 
     jaden.penup()
     jaden.forward(randint(1, 10))
     jaden.right(randint(-20, 20))
     jaden.pendown()
         
-    #alex.stamp()
     alex.penup()
     alex.forward(randint(1, 10))
     alex.right(randint(-20, 20))
