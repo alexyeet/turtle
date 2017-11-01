@@ -10,7 +10,7 @@ texto.shape("turtle")
 colorboy.shape("turtle")
 
 texto.color("dark blue")
-colorboy.color(randint(0, 255))
+colorboy.color("chartreuse")
 
 texto.pensize(10)
 
@@ -119,13 +119,23 @@ def write_rumors(color):
 
     write_S()
 
+def draw_star(size):
+    colorboy.pendown()
+    for i in range (5):
+        colorboy.fd(size)
+        colorboy.left(144)
+    colorboy.penup()
+        
+
 #run
     
-write_rumors("blue")
+#write_rumors("blue")
 
 while True:
-    colorboy.fd(randint(1, 10))
-    colorboy.right(randint(-20, 20))
+    draw_star(100)
+    colorboy.right(randint(1, 360))
+    colorboy.fd(150)
+    
 
     
 
