@@ -128,8 +128,9 @@ def draw_star(size):
         
 
 #run
-    
-#write_rumors("blue")
+
+for i in range (1):  
+    write_rumors("blue")
 
 while True:
     draw_star(100)
