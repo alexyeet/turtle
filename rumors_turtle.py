@@ -3,14 +3,16 @@ import math
 from random import randint
 from turtle import *
 
+colormode(255)
+
 texto = Turtle()
 colorboy = Turtle()
 
 texto.shape("turtle")
 colorboy.shape("turtle")
 
-texto.color("dark blue")
-colorboy.color("chartreuse")
+texto.color(45, 88, 158)
+colorboy.color(randint(0, 255), randint(0, 255), randint(0, 255))
 
 texto.pensize(10)
 
@@ -125,7 +127,14 @@ def draw_star(size):
         colorboy.fd(size)
         colorboy.left(144)
     colorboy.penup()
-        
+
+#arrow keys
+
+def right_arrow():
+    colorboy.right(randint(10, 90))
+
+def left_arrow():
+    colorboy.left(randint(10, 90))
 
 #run
 
@@ -136,7 +145,10 @@ while True:
     draw_star(100)
     colorboy.right(randint(1, 360))
     colorboy.fd(150)
-    
+    colorboy.color(randint(0, 255), randint(0, 255), randint(0, 255))
+    onkeypress(left_arrow)
+    onkeypress(right_arrow)
+    listen()
 
     
 
